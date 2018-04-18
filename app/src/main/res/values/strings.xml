@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PaymentGetWay</string>
+
+
+    <!--Related to Adyen Payment-->
+    <string name="check_out_payment_success">Payment Success.</string>
+    <string name="check_out_payment_failure">Payment Failure.</string>
+
+    <string name="check_out_adyen_payment_verify_success_1">Payment is</string>
+    <string name="check_out_adyen_payment_verify_success_2">and verified.</string>
+    <string name="check_out_adyen_payment_verify_failure">Failed to verify payment.</string>
+
+    <!--Related to Merchandise Fragment-->
+    <string name="merchandise_list_empty">No Merchandise Found</string>
+
+
+</resources>
