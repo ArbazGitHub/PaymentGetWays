@@ -13,6 +13,7 @@ public class SelectionActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selection);
+
         findViewById(R.id.btnAdyen).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,6 +26,12 @@ public class SelectionActivity extends Activity {
             public void onClick(View view) {
                 startActivity(SelectionActivity.this, PaytmActivity.class);
 
+            }
+        });
+        findViewById(R.id.btnBrainTree).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(SelectionActivity.this, BrainTreeActivity.class);
             }
         });
     }

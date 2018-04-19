@@ -3,11 +3,9 @@ package com.techno.paymentgetway;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Toast;
 
 import com.adyen.core.PaymentRequest;
@@ -93,7 +91,7 @@ public class AdyenActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adyen);
-        findViewById(R.id.start_transaction).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnAdyen).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 paymentRequest = new PaymentRequest(AdyenActivity.this, paymentRequestListener);

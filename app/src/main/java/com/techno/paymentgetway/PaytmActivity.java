@@ -1,7 +1,6 @@
 package com.techno.paymentgetway;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,7 +30,7 @@ public class PaytmActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paytm);
         response = findViewById(R.id.response);
-        findViewById(R.id.start_transaction).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnPaytm).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onStartTransaction(view);

@@ -10,22 +10,34 @@
         android:orientation="vertical">
 
         <TextView
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Transaction Via Paytm PAYTM "
+            android:padding="10dp"
+            android:text="Transaction Via BrainTree"
             android:textColor="@android:color/white"
             android:textSize="20dp" />
 
         <Button
-            android:layout_margin="30dp"
-            android:id="@+id/btnPaytm"
+            android:layout_margin="5dp"
+            android:id="@+id/btnDrop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/colorAccent"
-            android:text="Start Transaction"
+            android:text="Drop Ui"
+            android:textColor="@android:color/white"
+            android:textSize="16dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnPaypal"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:text="Paypal"
             android:textColor="@android:color/white"
             android:textSize="16dip"
             android:textStyle="bold" />

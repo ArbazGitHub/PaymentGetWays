@@ -25,16 +25,26 @@
             android:name=".PaytmActivity"
             android:label="Paytm"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".AdyenActivity"
             android:screenOrientation="portrait" />
-        <!-- Open Paytm GetWay-->
+        <!-- Open Paytm GetWay -->
         <activity
             android:name="com.paytm.pgsdk.PaytmPGActivity"
             android:configChanges="keyboardHidden|orientation|keyboard"
             android:screenOrientation="portrait" />
-
+        <activity
+            android:name=".BrainTreeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
