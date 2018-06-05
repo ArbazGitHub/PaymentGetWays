@@ -32,6 +32,8 @@ dependencies {
     implementation 'com.adyen.checkout:utils:1.14.1'
     implementation 'com.adyen.checkout:ui:1.14.1'
     implementation 'com.adyen.checkout:cardscan:1.14.1'
-    //fro brainTree
+    //for brainTree
     implementation 'com.braintreepayments.api:drop-in:3.+'
+    //for RazorPay
+    compile 'com.razorpay:checkout:1.4.7'
 }

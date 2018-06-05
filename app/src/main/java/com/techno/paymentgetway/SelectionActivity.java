@@ -34,6 +34,13 @@ public class SelectionActivity extends Activity {
                 startActivity(SelectionActivity.this, BrainTreeActivity.class);
             }
         });
+
+        findViewById(R.id.btnRazorpay).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(SelectionActivity.this,RazorPayActivity.class);
+            }
+        });
     }
 
     public void startActivity(Context context, Class startClass) {
